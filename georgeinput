@@ -1,0 +1,95 @@
+Emailed input from George
+
+git config -global user.name “name”
+
+global user.email “myemail.com”
+
+  Will set git to use credentials and email for git account.
+
+git init 
+  Initializes a git repository
+
+git clone 
+  copies a remote git repository and adds the location as a remote so it can be fetched from or pushed to a repository you have credentials to access.
+
+git add 
+  adds file changes in working directory to index
+
+git rm 
+  removes files from index and working directory so they will not be tracked
+
+git commit 
+  takes all changes written in the index and creates a new commit object pointing to it and sets branch to point to the new commit. e.g. git commit -a commits added changes, git commit -a -m commits all changes and is equal to git add and git commit.
+
+git status 
+  shows status of files in index vs. the working directory.
+
+git branch 
+  lists existing branches, including remote branches if -a is provided.
+
+git checkout 
+  checks out a different branch…switches branch by updating the index, working index and HEAD to reflect eh chosen branch.
+
+git merge 
+  merges one or more branches into your current branch and creates a new commit if there are no conflicts. e.g. git merge newbranchversion
+
+git reset 
+  resets your index and working directory to the state of the last commit. e.g. git reset –hard HEAD
+
+git stash 
+  temporarily saves changes you don’t want to commit immediately
+
+git tag 
+  tags a specific commit with a simple human readable tag that doesn’t move. e.g. git tag -a v1.0 -m ‘this is version 1.0 tag’
+
+git fetch 
+  fetches all the objects from remote repository that are not present locally.
+
+git pull 
+  fetches files from the remote repository and merges them with the local repository. This command is equal to the git fetch and git merge sequence.
+
+git push 
+  pushes all the modified local objects to the remote repository and advances its branches.
+
+git remote 
+  shows all the remote versions of your repository
+
+git log 
+  shows a listing of commits on a branch including the corresponding details
+
+git show 
+  shows information about a git object
+
+git ls-tree 
+  shows a tree, including the mode and the name of each item and the SHA-1 value of the blob or tree that it points to.
+
+git cat-file 
+  used to view the type of an object through the SHA-1 value
+
+git prep 
+  lets you search through your tree of content for words and phrases
+
+git diff 
+  generates patch files or statistics of differences between paths or files in your git repository.
+
+gitk 
+  graphical Tcl/Tk based interface to a local Git repository
+
+git instaweb 
+  runs a web server with an interface into your local repository and automatically directs a web browser to it
+
+git archive 
+  creates a .tar or .zip file including the contents of a single tree from your repository
+
+git gc 
+  garbage collector for your repository. Optimizes repository and should be run occasionally.
+
+git fsck 
+  does an integrity check of the Git file system, identifying corrupted objects
+
+git prune 
+  removes objects that are no longer pointed to by any object in any reachable branch
+  
+  
+  
+  
